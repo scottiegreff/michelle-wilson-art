@@ -3,15 +3,15 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section>
-      {/* Image panel — full width, natural aspect ratio */}
-      <div className="relative w-full aspect-1448/1086 mt-16">
+      {/* Image panel — full width, full screen height minus navbar */}
+      <div className="relative w-full mt-16" style={{ height: "calc(100svh - 64px)" }}>
         <Image
           src="/hero.png"
           alt="Held — from the Returning series, Michelle R. Wilson"
           fill
           priority
           sizes="100vw"
-          className="object-contain"
+          className="object-cover"
         />
       </div>
 
