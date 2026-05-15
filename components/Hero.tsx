@@ -3,27 +3,16 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section>
-      {/* Image panel — fills exactly the viewport below the navbar */}
-      <div
-        className="flex items-center justify-center overflow-hidden"
-        style={{ paddingTop: "64px", height: "97svh" }}
-      >
-        <div
-          className="relative"
-          style={{
-            width: "min(calc(97svh - 64px), 100vw)",
-            height: "min(calc(97svh - 64px), 100vw)",
-          }}
-        >
-          <Image
-            src="/hero.png"
-            alt="Held — from the Returning series, Michelle R. Wilson"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
-        </div>
+      {/* Image panel — full width, natural aspect ratio */}
+      <div className="relative w-full aspect-1448/1086 mt-16">
+        <Image
+          src="/hero.png"
+          alt="Held — from the Returning series, Michelle R. Wilson"
+          fill
+          priority
+          sizes="100vw"
+          className="object-contain"
+        />
       </div>
 
       {/* Text block — scrolls below the image */}
