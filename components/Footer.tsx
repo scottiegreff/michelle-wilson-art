@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { FaInstagram, FaPinterest, FaEnvelope } from "react-icons/fa";
-import { SiArtstation } from "react-icons/si";
+import { FaEnvelope } from "react-icons/fa";
 
 const navLinks = [
   { label: "Work", href: "/work" },
@@ -9,29 +8,11 @@ const navLinks = [
   { label: "Inquiries", href: "/inquiries" },
 ];
 
-const socialLinks = [
-  {
-    label: "Instagram",
-    href: "https://instagram.com",
-    icon: FaInstagram,
-  },
-  {
-    label: "Pinterest",
-    href: "https://pinterest.com",
-    icon: FaPinterest,
-  },
-  {
-    label: "ArtStation",
-    href: "https://artstation.com",
-    icon: SiArtstation,
-  },
-];
-
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#D9A98A] text-[#1A1A1A]">
+    <footer className="bg-[#FAF3EE] text-[#1A1A1A]">
       {/* Main footer body */}
       <div className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16 pt-16 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-12 md:gap-8">
@@ -50,21 +31,6 @@ export default function Footer() {
               Vancouver, BC — Canada
             </p>
 
-            {/* Social icons */}
-            <div className="flex items-center gap-4 mt-4">
-              {socialLinks.map(({ label, href, icon: Icon }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="text-[#4A3028] hover:text-[#1A1A1A] transition-colors duration-200"
-                >
-                  <Icon size={18} />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Navigate column */}

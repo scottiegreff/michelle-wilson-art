@@ -16,7 +16,7 @@ export default function Hero() {
           }}
         >
           <Image
-            src="/IMG_0861.jpeg"
+            src="/hero.png"
             alt="Held — from the Returning series, Michelle R. Wilson"
             fill
             priority
