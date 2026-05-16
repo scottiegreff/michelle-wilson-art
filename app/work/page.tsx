@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import returningPaintings from "@/data/paintings/returning.json";
 import parisPaintings from "@/data/paintings/paris.json";
 import dancersPaintings from "@/data/paintings/dancers.json";
+import homePortraitsPaintings from "@/data/paintings/home-portraits.json";
 
 export const metadata: Metadata = {
   title: "Work — Michelle R. Wilson",
@@ -28,8 +29,8 @@ const series = [
     slug: "home-portraits",
     title: "Home Portraits",
     date: null,
-    leadImage: null,
-    leadImageAlt: "",
+    leadImage: homePortraitsPaintings[0].src,
+    leadImageAlt: homePortraitsPaintings[0].title + ", Home Portraits series",
     description: "Paintings of the homes that hold a life.",
     cta: "View series",
   },
