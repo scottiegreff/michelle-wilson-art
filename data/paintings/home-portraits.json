@@ -1,9 +1,9 @@
 [
   {
-    "src": "/work/home-portraits/palm-springs-1.webp",
-    "title": "Palm Springs 1",
+    "src": "/work/home-portraits/palm-springs-2.webp",
+    "title": "Palm Springs 2",
     "year": 2024,
-    "medium": "Acrylic on canvas",
+    "medium": "Acrylic on Canvas",
     "width": 20,
     "height": 16,
     "orientation": "landscape",
@@ -14,10 +14,10 @@
     "prints": false
   },
   {
-    "src": "/work/home-portraits/palm-springs-2.webp",
-    "title": "Palm Springs 2",
+    "src": "/work/home-portraits/palm-springs-1.webp",
+    "title": "Palm Springs 1",
     "year": 2021,
-    "medium": "Acrylic on canvas",
+    "medium": "Acrylic on Canvas",
     "width": 16,
     "height": 20,
     "orientation": "portrait",
