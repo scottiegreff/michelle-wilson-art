@@ -8,7 +8,7 @@
     "height": 20,
     "orientation": "portrait",
     "price": null,
-    "status": "available",
+    "status": "sold",
     "description": "",
     "framed": false,
     "prints": false
@@ -22,7 +22,7 @@
     "height": 16,
     "orientation": "landscape",
     "price": null,
-    "status": "available",
+    "status": "sold",
     "description": "",
     "framed": false,
     "prints": false
