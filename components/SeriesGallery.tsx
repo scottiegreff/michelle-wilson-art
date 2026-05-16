@@ -7,9 +7,16 @@ import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 export type Painting = {
   src: string;
   title: string;
-  year?: string;
-  medium?: string;
-  dimensions?: string;
+  year?: string | null;
+  medium?: string | null;
+  width?: number | null;
+  height?: number | null;
+  orientation?: "portrait" | "landscape" | "square" | null;
+  price?: number | null;
+  status?: "available" | "sold" | "nfs" | null;
+  description?: string | null;
+  framed?: boolean | null;
+  prints?: boolean | null;
 };
 
 type Props = {
@@ -70,8 +77,9 @@ export default function SeriesGallery({
   }, [isOpen]);
 
   const current = selected !== null ? paintings[selected] : null;
+  const dimensions = current?.width && current?.height ? `${current.width}" × ${current.height}"` : null;
   const caption = current
-    ? [current.year, current.medium, current.dimensions].filter(Boolean).join(" · ")
+    ? [current.year, current.medium, dimensions].filter(Boolean).join(" · ")
     : "";
 
   return (
@@ -100,7 +108,7 @@ export default function SeriesGallery({
               {p.title}
             </p>
             <p className="font-sans font-light text-xs text-accent mt-1">
-              {[p.year, p.medium, p.dimensions].filter(Boolean).join(" · ")}
+              {[p.year, p.medium, p.width && p.height ? `${p.width}" × ${p.height}"` : null].filter(Boolean).join(" · ")}
             </p>
           </button>
         ))}

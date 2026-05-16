@@ -1,20 +1,44 @@
 [
   {
-    "src": "/work/dancers/1-rehersal.jpg",
+    "src": "/work/dancers/rehersal.webp",
     "title": "Rehearsal",
+    "year": null,
     "medium": "Acrylic on canvas",
-    "dimensions": "36\" × 48\""
+    "width": 36,
+    "height": 48,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   },
   {
-    "src": "/work/dancers/2-warm-up.jpg",
+    "src": "/work/dancers/warm-up.webp",
     "title": "Warm Up",
+    "year": null,
     "medium": "Acrylic on canvas",
-    "dimensions": "30\" × 36\""
+    "width": 30,
+    "height": 36,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   },
   {
-    "src": "/work/dancers/3-solo.jpg",
+    "src": "/work/dancers/solo.webp",
     "title": "Solo",
+    "year": null,
     "medium": "Acrylic on canvas",
-    "dimensions": "30\" × 36\""
+    "width": 30,
+    "height": 36,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   }
 ]

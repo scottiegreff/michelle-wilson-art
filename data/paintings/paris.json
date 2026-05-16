@@ -1,50 +1,114 @@
 [
   {
-    "src": "/work/paris/1-albe-hotel.jpg",
+    "src": "/work/paris/albe-hotel.webp",
     "title": "Albe Hotel",
+    "year": null,
     "medium": "Acrylic on canvas",
-    "dimensions": "30\" × 40\""
+    "width": 30,
+    "height": 40,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   },
   {
-    "src": "/work/paris/2-quiet-hour.jpg",
+    "src": "/work/paris/quiet-hour.webp",
     "title": "Quiet Hour",
+    "year": null,
     "medium": "Acrylic on canvas",
-    "dimensions": "30\" × 40\""
+    "width": 30,
+    "height": 40,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   },
   {
-    "src": "/work/paris/3-la-fregate.jpg",
+    "src": "/work/paris/la-fregate.webp",
     "title": "La Frégate",
+    "year": null,
     "medium": "Acrylic on canvas",
-    "dimensions": "24\" × 30\""
+    "width": 24,
+    "height": 30,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   },
   {
-    "src": "/work/paris/4-grizzli-cafe.jpg",
+    "src": "/work/paris/grizzli-cafe.webp",
     "title": "Grizzli Cafe",
+    "year": null,
     "medium": "Acrylic on canvas",
-    "dimensions": "24\" × 30\""
+    "width": 24,
+    "height": 30,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   },
   {
-    "src": "/work/paris/5-chez-mademoiselle.jpg",
+    "src": "/work/paris/chez-mademoiselle.webp",
     "title": "Chez Mademoiselle",
+    "year": null,
     "medium": "Acrylic on canvas",
-    "dimensions": "16\" × 20\""
+    "width": 16,
+    "height": 20,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   },
   {
-    "src": "/work/paris/6-in-a-moment.jpg",
+    "src": "/work/paris/in-a-moment.webp",
     "title": "In a Moment",
+    "year": null,
     "medium": "Acrylic on canvas",
-    "dimensions": "24\" × 30\""
+    "width": 24,
+    "height": 30,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   },
   {
-    "src": "/work/paris/7-salon-de-the.jpg",
+    "src": "/work/paris/salon-de-the.webp",
     "title": "Salon de Thé",
+    "year": null,
     "medium": "Acrylic on canvas",
-    "dimensions": "30\" × 40\""
+    "width": 30,
+    "height": 40,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   },
   {
-    "src": "/work/paris/8-cafe.jpg",
+    "src": "/work/paris/cafe.webp",
     "title": "Café",
+    "year": null,
     "medium": "Acrylic on canvas",
-    "dimensions": "16\" × 20\""
+    "width": 16,
+    "height": 20,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   }
 ]

@@ -1,8 +1,16 @@
 [
   {
-    "src": "/work/returning/1-held.jpeg",
+    "src": "/work/returning/held.webp",
     "title": "Held",
     "year": "2026",
-    "medium": "Oil on canvas"
+    "medium": "Oil on canvas",
+    "width": null,
+    "height": null,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   }
 ]
