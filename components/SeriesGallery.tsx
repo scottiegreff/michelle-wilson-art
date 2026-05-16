@@ -7,7 +7,7 @@ import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 export type Painting = {
   src: string;
   title: string;
-  year?: string | null;
+  year?: string | number | null;
   medium?: string | null;
   width?: number | null;
   height?: number | null;

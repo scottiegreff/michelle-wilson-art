@@ -105,7 +105,7 @@ export default function WorkPage() {
           >
             <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-0 border border-muted hover:border-accent transition-colors duration-300">
               {/* Image */}
-              <div className="relative aspect-4/3 overflow-hidden">
+              <div className="relative aspect-square overflow-hidden">
                 <Image
                   src={returning.leadImage!}
                   alt={returning.leadImageAlt}
@@ -146,7 +146,7 @@ export default function WorkPage() {
                 className="group flex flex-col"
               >
                 {/* Thumbnail */}
-                <div className="relative aspect-4/3 overflow-hidden bg-muted mb-4">
+                <div className="relative aspect-square overflow-hidden bg-muted mb-4">
                   {s.leadImage ? (
                     <Image
                       src={s.leadImage}
