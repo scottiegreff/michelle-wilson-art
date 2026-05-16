@@ -96,19 +96,5 @@
     "description": "",
     "framed": false,
     "prints": false
-  },
-  {
-    "src": "/work/paris/cafe.webp",
-    "title": "Café",
-    "year": "2015",
-    "medium": "Acrylic on canvas",
-    "width": 16,
-    "height": 20,
-    "orientation": "portrait",
-    "price": null,
-    "status": "available",
-    "description": "",
-    "framed": false,
-    "prints": false
   }
 ]
