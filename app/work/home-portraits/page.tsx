@@ -56,7 +56,7 @@ export default function HomePortraitsPage() {
             </p>
           </div>
 
-          <SeriesGallery paintings={paintings} thumbnailAspect="landscape" />
+          <SeriesGallery paintings={paintings} thumbnailAspect="square" />
 
           {/* Commission CTA */}
           <div className="pt-10 border-t border-muted">

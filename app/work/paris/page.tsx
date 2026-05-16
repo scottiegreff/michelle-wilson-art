@@ -43,7 +43,7 @@ export default function ParisPage() {
             </p>
           </div>
 
-          <SeriesGallery paintings={paintings} thumbnailAspect="portrait" />
+          <SeriesGallery paintings={paintings} thumbnailAspect="square" />
 
           {/* CTA */}
           <div className="mt-16 pt-10 border-t border-muted flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
