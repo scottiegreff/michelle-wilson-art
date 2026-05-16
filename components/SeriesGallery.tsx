@@ -79,7 +79,7 @@ export default function SeriesGallery({
   const current = selected !== null ? paintings[selected] : null;
   const dimensions = current?.width && current?.height ? `${current.width}" × ${current.height}"` : null;
   const caption = current
-    ? [current.year, current.medium, dimensions].filter(Boolean).join(" · ")
+    ? [current.medium, dimensions, current.year].filter(Boolean).join(" · ")
     : "";
 
   return (
@@ -108,7 +108,7 @@ export default function SeriesGallery({
               {p.title}
             </p>
             <p className="font-sans font-light text-xs text-accent mt-1">
-              {[p.year, p.medium, p.width && p.height ? `${p.width}" × ${p.height}"` : null].filter(Boolean).join(" · ")}
+              {[p.medium, p.width && p.height ? `${p.width}" × ${p.height}"` : null, p.year].filter(Boolean).join(" · ")}
             </p>
           </button>
         ))}
@@ -117,7 +117,7 @@ export default function SeriesGallery({
       {/* ── Lightbox ──────────────────────────────────── */}
       {isOpen && current && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-white backdrop-blur-md"
           onClick={close}
           role="dialog"
           aria-modal="true"
@@ -125,7 +125,7 @@ export default function SeriesGallery({
         >
           {/* Close */}
           <button
-            className="absolute top-5 right-5 text-white/60 hover:text-white transition-colors p-2 z-10"
+            className="absolute top-5 right-5 text-foreground/40 hover:text-foreground transition-colors p-2 z-10"
             onClick={close}
             aria-label="Close"
           >
@@ -134,7 +134,7 @@ export default function SeriesGallery({
 
           {/* Counter */}
           {paintings.length > 1 && (
-            <p className="absolute top-5 left-1/2 -translate-x-1/2 font-sans font-light text-[11px] tracking-[0.25em] text-white/40 select-none">
+            <p className="absolute top-5 left-1/2 -translate-x-1/2 font-sans font-light text-[11px] tracking-[0.25em] text-foreground/40 select-none">
               {(selected ?? 0) + 1} / {paintings.length}
             </p>
           )}
@@ -142,7 +142,7 @@ export default function SeriesGallery({
           {/* Prev arrow */}
           {paintings.length > 1 && (
             <button
-              className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 text-white/40 hover:text-white transition-colors p-3 z-10"
+              className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 text-foreground/30 hover:text-foreground transition-colors p-3 z-10"
               onClick={(e) => { e.stopPropagation(); prev(); }}
               aria-label="Previous painting"
             >
@@ -163,11 +163,11 @@ export default function SeriesGallery({
               draggable={false}
             />
             <div className="mt-5 text-center">
-              <p className="font-serif font-light text-lg text-white">
+              <p className="font-serif font-light text-lg text-foreground">
                 {current.title}
               </p>
               {caption && (
-                <p className="font-sans font-light text-xs text-white/50 mt-1.5 tracking-wide">
+                <p className="font-sans font-light text-xs text-accent mt-1.5 tracking-wide">
                   {caption}
                 </p>
               )}
@@ -177,7 +177,7 @@ export default function SeriesGallery({
           {/* Next arrow */}
           {paintings.length > 1 && (
             <button
-              className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 text-white/40 hover:text-white transition-colors p-3 z-10"
+              className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 text-foreground/30 hover:text-foreground transition-colors p-3 z-10"
               onClick={(e) => { e.stopPropagation(); next(); }}
               aria-label="Next painting"
             >
