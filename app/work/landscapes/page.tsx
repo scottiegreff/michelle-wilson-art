@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import SeriesGallery, { type Painting } from "@/components/SeriesGallery";
+import paintingsData from "@/data/paintings/landscapes.json";
+const paintings = paintingsData as Painting[];
 
 export const metadata: Metadata = {
   title: "Landscapes — Michelle R. Wilson",
@@ -43,18 +46,7 @@ export default function LandscapesPage() {
             </p>
           </div>
 
-          {/* Paintings placeholder */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-16">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="flex flex-col">
-                <div className="relative aspect-[4/3] bg-muted flex items-end p-4 mb-4">
-                  <p className="font-serif italic font-light text-xs text-accent">
-                    Works forthcoming
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <SeriesGallery paintings={paintings} thumbnailAspect="portrait" />
 
           {/* CTA */}
           <div className="pt-10 border-t border-muted flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">

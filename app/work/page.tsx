@@ -7,6 +7,7 @@ import returningPaintings from "@/data/paintings/returning.json";
 import parisPaintings from "@/data/paintings/paris.json";
 import dancersPaintings from "@/data/paintings/dancers.json";
 import homePortraitsPaintings from "@/data/paintings/home-portraits.json";
+import landscapesPaintings from "@/data/paintings/landscapes.json";
 
 export const metadata: Metadata = {
   title: "Work — Michelle R. Wilson",
@@ -38,8 +39,8 @@ const series = [
     slug: "landscapes",
     title: "Landscapes",
     date: null,
-    leadImage: null,
-    leadImageAlt: "",
+    leadImage: landscapesPaintings[0].src,
+    leadImageAlt: landscapesPaintings[0].title + ", Landscapes series",
     description: "Paintings of place — the land as both subject and presence.",
     cta: "View series",
   },
