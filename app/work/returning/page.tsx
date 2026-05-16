@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import SeriesGallery from "@/components/SeriesGallery";
-import paintings from "@/data/paintings/returning.json";
+import SeriesGallery, { type Painting } from "@/components/SeriesGallery";
+import paintingsData from "@/data/paintings/returning.json";
+const paintings = paintingsData as Painting[];
 
 export const metadata: Metadata = {
   title: "Returning — Michelle R. Wilson",
