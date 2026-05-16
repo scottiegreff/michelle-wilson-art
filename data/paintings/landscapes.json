@@ -12,5 +12,19 @@
     "description": "",
     "framed": false,
     "prints": false
+  },
+  {
+    "src": "/work/landscapes/california-pastels.webp",
+    "title": "California Pastels",
+    "year": null,
+    "medium": "Acrylic on canvas",
+    "width": 20,
+    "height": 16,
+    "orientation": "landscape",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   }
 ]
