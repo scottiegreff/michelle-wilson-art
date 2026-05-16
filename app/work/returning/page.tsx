@@ -3,21 +3,13 @@ import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import SeriesGallery from "@/components/SeriesGallery";
+import paintings from "@/data/paintings/returning.json";
 
 export const metadata: Metadata = {
   title: "Returning — Michelle R. Wilson",
   description:
     "Returning is an ongoing series of paintings exploring stillness, space, and the quiet that waits in architecture, landscape, and light.",
 };
-
-const paintings = [
-  {
-    src: "/IMG_0861.jpeg",
-    title: "Held",
-    year: "2026",
-    medium: "Oil on canvas",
-  },
-];
 
 export default function ReturningPage() {
   return (

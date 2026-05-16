@@ -1,0 +1,50 @@
+[
+  {
+    "src": "/work/paris/1-albe-hotel.jpg",
+    "title": "Albe Hotel",
+    "medium": "Acrylic on canvas",
+    "dimensions": "30\" × 40\""
+  },
+  {
+    "src": "/work/paris/2-quiet-hour.jpg",
+    "title": "Quiet Hour",
+    "medium": "Acrylic on canvas",
+    "dimensions": "30\" × 40\""
+  },
+  {
+    "src": "/work/paris/3-la-fregate.jpg",
+    "title": "La Frégate",
+    "medium": "Acrylic on canvas",
+    "dimensions": "24\" × 30\""
+  },
+  {
+    "src": "/work/paris/4-grizzli-cafe.jpg",
+    "title": "Grizzli Cafe",
+    "medium": "Acrylic on canvas",
+    "dimensions": "24\" × 30\""
+  },
+  {
+    "src": "/work/paris/5-chez-mademoiselle.jpg",
+    "title": "Chez Mademoiselle",
+    "medium": "Acrylic on canvas",
+    "dimensions": "16\" × 20\""
+  },
+  {
+    "src": "/work/paris/6-in-a-moment.jpg",
+    "title": "In a Moment",
+    "medium": "Acrylic on canvas",
+    "dimensions": "24\" × 30\""
+  },
+  {
+    "src": "/work/paris/7-salon-de-the.jpg",
+    "title": "Salon de Thé",
+    "medium": "Acrylic on canvas",
+    "dimensions": "30\" × 40\""
+  },
+  {
+    "src": "/work/paris/8-cafe.jpg",
+    "title": "Café",
+    "medium": "Acrylic on canvas",
+    "dimensions": "16\" × 20\""
+  }
+]

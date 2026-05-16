@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import returningPaintings from "@/data/paintings/returning.json";
+import parisPaintings from "@/data/paintings/paris.json";
+import dancersPaintings from "@/data/paintings/dancers.json";
 
 export const metadata: Metadata = {
   title: "Work — Michelle R. Wilson",
@@ -15,8 +18,8 @@ const series = [
     slug: "returning",
     title: "Returning",
     date: "2026 –",
-    leadImage: "/IMG_0861.jpeg",
-    leadImageAlt: "Held, from the Returning series",
+    leadImage: returningPaintings[0].src,
+    leadImageAlt: returningPaintings[0].title + ", from the Returning series",
     description:
       "A series in progress. Paintings of stillness, space, and the quiet that waits in architecture, landscape, and light.",
     cta: "Enter series",
@@ -43,8 +46,8 @@ const series = [
     slug: "paris",
     title: "Paris",
     date: null,
-    leadImage: "/work/paris/quiet-hour.jpg",
-    leadImageAlt: "Quiet Hour, Paris series",
+    leadImage: parisPaintings[0].src,
+    leadImageAlt: parisPaintings[0].title + ", Paris series",
     description: "Cityscapes from time spent walking the streets of Paris.",
     cta: "View series",
   },
@@ -52,8 +55,8 @@ const series = [
     slug: "dancers",
     title: "Dancers",
     date: null,
-    leadImage: "/work/dancers/Solo-acrylic-on-canvas-30x36.jpg",
-    leadImageAlt: "Solo, Dancers series",
+    leadImage: dancersPaintings[0].src,
+    leadImageAlt: dancersPaintings[0].title + ", Dancers series",
     description: "Movement, breath, and the body in motion.",
     cta: "View series",
   },
@@ -100,7 +103,7 @@ export default function WorkPage() {
           >
             <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-0 border border-muted hover:border-accent transition-colors duration-300">
               {/* Image */}
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-4/3 overflow-hidden">
                 <Image
                   src={returning.leadImage!}
                   alt={returning.leadImageAlt}
@@ -141,7 +144,7 @@ export default function WorkPage() {
                 className="group flex flex-col"
               >
                 {/* Thumbnail */}
-                <div className="relative aspect-[4/3] overflow-hidden bg-muted mb-4">
+                <div className="relative aspect-4/3 overflow-hidden bg-muted mb-4">
                   {s.leadImage ? (
                     <Image
                       src={s.leadImage}

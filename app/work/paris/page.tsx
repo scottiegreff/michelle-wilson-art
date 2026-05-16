@@ -3,23 +3,13 @@ import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import SeriesGallery from "@/components/SeriesGallery";
+import paintings from "@/data/paintings/paris.json";
 
 export const metadata: Metadata = {
   title: "Paris — Michelle R. Wilson",
   description:
     "Cityscapes from time spent walking the streets of Paris — paintings of learning a city through sustained looking.",
 };
-
-const paintings = [
-  { src: "/work/paris/quiet-hour.jpg", title: "Quiet Hour", medium: "Acrylic on canvas", dimensions: '30" × 40"' },
-  { src: "/work/paris/albe-hotel.jpg", title: "Albe Hotel", medium: "Acrylic on canvas", dimensions: '30" × 40"' },
-  { src: "/work/paris/salon-de-the.jpg", title: "Salon de Thé", medium: "Acrylic on canvas", dimensions: '30" × 40"' },
-  { src: "/work/paris/grizzli-cafe.jpg", title: "Grizzli Cafe", medium: "Acrylic on canvas", dimensions: '24" × 30"' },
-  { src: "/work/paris/in-a-moment.jpg", title: "In a Moment", medium: "Acrylic on canvas", dimensions: '24" × 30"' },
-  { src: "/work/paris/la-fregate.jpg", title: "La Frégate", medium: "Acrylic on canvas", dimensions: '24" × 30"' },
-  { src: "/work/paris/cafe.jpg", title: "Café", medium: "Acrylic on canvas", dimensions: '16" × 20"' },
-  { src: "/work/paris/chez-mademoiselle.jpg", title: "Chez Mademoiselle", medium: "Acrylic on canvas", dimensions: '16" × 20"' },
-];
 
 export default function ParisPage() {
   return (

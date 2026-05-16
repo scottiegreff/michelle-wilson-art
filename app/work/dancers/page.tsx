@@ -3,18 +3,13 @@ import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import SeriesGallery from "@/components/SeriesGallery";
+import paintings from "@/data/paintings/dancers.json";
 
 export const metadata: Metadata = {
   title: "Dancers — Michelle R. Wilson",
   description:
     "Paintings of movement, breath, and the body in motion by Michelle R. Wilson.",
 };
-
-const paintings = [
-  { src: "/work/dancers/Solo-acrylic-on-canvas-30x36.jpg", title: "Solo", medium: "Acrylic on canvas", dimensions: '30" × 36"' },
-  { src: "/work/dancers/Rehersal-acrylic-on-canvas-36x48.jpg", title: "Rehearsal", medium: "Acrylic on canvas", dimensions: '36" × 48"' },
-  { src: "/work/dancers/warm-up-acrylic-on-canvas-30x36.jpg", title: "Warm Up", medium: "Acrylic on canvas", dimensions: '30" × 36"' },
-];
 
 export default function DancersPage() {
   return (
