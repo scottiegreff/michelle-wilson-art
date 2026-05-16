@@ -1,12 +1,12 @@
 [
   {
-    "src": "/work/dancers/rehersal.webp",
-    "title": "Rehearsal",
+    "src": "/work/dancers/backstage-1.webp",
+    "title": "Backstage 1",
     "year": "2012",
     "medium": "Acrylic on canvas",
-    "width": 36,
-    "height": 48,
-    "orientation": "portrait",
+    "width": 48,
+    "height": 36,
+    "orientation": "landscape",
     "price": null,
     "status": "available",
     "description": "",
@@ -14,8 +14,8 @@
     "prints": false
   },
   {
-    "src": "/work/dancers/warm-up.webp",
-    "title": "Warm Up",
+    "src": "/work/dancers/backstage-2.webp",
+    "title": "Backstage 2",
     "year": "2012",
     "medium": "Acrylic on canvas",
     "width": 30,

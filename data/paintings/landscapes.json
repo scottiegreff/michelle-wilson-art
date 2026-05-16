@@ -26,5 +26,33 @@
     "description": "",
     "framed": false,
     "prints": false
+  },
+  {
+    "src": "/work/landscapes/mountain-meadows.webp",
+    "title": "Mountain Meadows",
+    "year": null,
+    "medium": null,
+    "width": null,
+    "height": null,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
+  },
+  {
+    "src": "/work/landscapes/pacific-shore.webp",
+    "title": "Pacific Shore",
+    "year": null,
+    "medium": null,
+    "width": null,
+    "height": null,
+    "orientation": "landscape",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   }
 ]
