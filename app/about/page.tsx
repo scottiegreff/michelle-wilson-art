@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Michelle R. Wilson is a visual artist based in Vancouver, BC, working in oil on canvas. Her paintings explore landscape, memory, and the places that hold us.",
 };
 
-const PHOTO_PATH = "/about/about-michelle.png";
+const PHOTO_PATH = "/about/about-michelle.jpeg";
 const PHOTO_EXISTS = true;
 
 export default function AboutPage() {
