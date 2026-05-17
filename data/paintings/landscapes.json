@@ -54,5 +54,19 @@
     "description": "",
     "framed": false,
     "prints": false
+  },
+  {
+    "src": "/work/landscapes/canola-field.webp",
+    "title": "Canola Field",
+    "year": null,
+    "medium": null,
+    "width": null,
+    "height": null,
+    "orientation": "landscape",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   }
 ]
