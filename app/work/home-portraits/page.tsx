@@ -59,8 +59,8 @@ export default function HomePortraitsPage() {
           <SeriesGallery paintings={paintings} thumbnailAspect="square" />
 
           {/* Commission CTA */}
-          <div className="pt-10 border-t border-muted">
-            <p className="font-serif font-light text-base leading-relaxed text-foreground mb-6">
+          <div className="mt-16 pt-10 border-t border-muted flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <p className="font-serif italic font-light text-base text-foreground">
               Commissions accepted for any home, any style.
             </p>
             <Link

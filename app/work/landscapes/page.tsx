@@ -49,7 +49,7 @@ export default function LandscapesPage() {
           <SeriesGallery paintings={paintings} thumbnailAspect="square" />
 
           {/* CTA */}
-          <div className="pt-10 border-t border-muted flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div className="mt-16 pt-10 border-t border-muted flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <p className="font-serif italic font-light text-base text-foreground">
               Interested in a commission or available work?
             </p>
