@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 
 const navLinks = [
+  { label: "Home", href: "/" },
   { label: "Work", href: "/work" },
   { label: "About", href: "/about" },
   { label: "Studio Notes", href: "/studio-notes" },
