@@ -42,7 +42,7 @@ export default function FigurePortraitPage() {
             </p>
           </div>
 
-          <SeriesGallery paintings={paintings} />
+          <SeriesGallery paintings={paintings} thumbnailAspect="square" />
 
           {/* CTA */}
           <div className="pt-10 border-t border-muted flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
