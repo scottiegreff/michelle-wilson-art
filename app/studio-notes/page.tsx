@@ -21,6 +21,7 @@ const entries = [
       "I was blessed to go on two 4-week vacations within five months (which included a mindfulness/yoga retreat) and I sincerely hoped these would be the solution to return to work with sustained energy and joy, yet they simply were not. And so, I paused. I listened. I really listened…to the loving part of me inside that knew it was time. Ego and Fear spoke loudly too, but I could now say, “No, I’m sorry, but this is enough. It is time to rest. To reconnect to your Self, to nature, to your own healing and joy.” I stepped away from work and arrived back in the studio. This is the medicine. This is where my lungs expand, healing unfolds, and magic returns.",
       "I painted 'Held' slowly. And when it was done, I found I wasn't finished with the question it was asking.",
       "That's how a series begins, I think. Not with a concept, but with a feeling you haven't yet fully understood.",
+      "<em>Returning</em> is not a series about burnout. It is a series about what becomes possible when we allow ourselves to stop.",
     ],
   },
 ];

@@ -1,21 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { FaInstagram, FaPinterest, FaEnvelope } from "react-icons/fa";
-import { SiArtstation } from "react-icons/si";
+import { FaEnvelope } from "react-icons/fa";
 
 const inquiryTypes = [
   { value: "", label: "Select a type" },
-  { value: "purchase", label: "Purchase Inquiry" },
+  { value: "original-work", label: "Original Work" },
   { value: "commission", label: "Commission" },
-  { value: "press", label: "Press / Media" },
-  { value: "general", label: "General" },
-];
-
-const socialLinks = [
-  { label: "Instagram", href: "https://instagram.com", icon: FaInstagram },
-  { label: "Pinterest", href: "https://pinterest.com", icon: FaPinterest },
-  { label: "ArtStation", href: "https://artstation.com", icon: SiArtstation },
+  { value: "art-rental-staging", label: "Art Rental & Staging" },
+  { value: "studio-visit", label: "Studio Visit" },
+  { value: "other", label: "Other" },
 ];
 
 type FormState = {
@@ -77,64 +71,108 @@ export default function InquiriesForm() {
   }
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-16 lg:gap-24 items-start">
-      {/* ── Left: info panel ─────────────────────────── */}
-      <div className="flex flex-col gap-8">
-        <div>
-          <h1 className="font-serif font-light text-4xl sm:text-5xl leading-tight tracking-tight text-foreground">
-            Get in Touch
-          </h1>
-          <p className="mt-5 font-serif italic font-light text-lg text-accent leading-relaxed">
-            Whether you&rsquo;re drawn to a specific piece, curious about a
-            commission, or simply want to learn more about the work — I&rsquo;d
-            love to hear from you.
-          </p>
-        </div>
+    <div className="flex flex-col gap-16">
 
-        <div className="w-10 h-px bg-muted" />
+      {/* ── Top: two columns ─────────────────────────── */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
-        <div className="flex flex-col gap-5">
-          <a
-            href="mailto:studio@michellewilson.art"
-            className="flex items-center gap-3 group w-fit"
-          >
-            <FaEnvelope
-              size={15}
-              className="text-accent group-hover:text-foreground transition-colors shrink-0"
-            />
-            <span className="font-sans font-light text-sm text-accent group-hover:text-foreground transition-colors">
-              studio@michellewilson.art
-            </span>
-          </a>
+        {/* Left: intro + contact */}
+        <div className="flex flex-col gap-8">
+          <div>
+            <h1 className="font-serif font-light text-4xl sm:text-5xl leading-tight tracking-tight text-foreground">
+              Inquiries
+            </h1>
+            <p className="mt-5 font-serif italic font-light text-lg text-accent leading-relaxed">
+              Whether you&rsquo;re drawn to a specific piece, curious about a
+              commission, or simply moved by something here — I&rsquo;d love to
+              hear from you.
+            </p>
+          </div>
 
-          <div className="flex items-center gap-5">
-            {socialLinks.map(({ label, href, icon: Icon }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={label}
-                className="text-accent hover:text-foreground transition-colors duration-200"
-              >
-                <Icon size={18} />
-              </a>
-            ))}
+          <div className="w-10 h-px bg-muted" />
+
+          <div className="flex flex-col gap-4">
+            <a
+              href="mailto:studio@michellewilson.art"
+              className="flex items-center gap-3 group w-fit"
+            >
+              <FaEnvelope
+                size={15}
+                className="text-accent group-hover:text-foreground transition-colors shrink-0"
+              />
+              <span className="font-sans font-light text-sm text-accent group-hover:text-foreground transition-colors">
+                studio@michellewilson.art
+              </span>
+            </a>
+            <a
+              href="/michelle-wilson-cv.pdf"
+              download
+              className="font-sans font-light text-sm text-accent hover:text-foreground transition-colors"
+            >
+              Download Full Bio &amp; CV →
+            </a>
+          </div>
+
+          <div>
+            <p className="font-sans font-light text-xs tracking-[0.2em] uppercase text-accent">
+              Vancouver, BC — Canada
+            </p>
+            <p className="mt-1 font-sans font-light text-xs tracking-[0.2em] uppercase text-accent">
+              michellewilson.art
+            </p>
           </div>
         </div>
 
-        <div className="mt-4">
-          <p className="font-sans font-light text-xs tracking-[0.2em] uppercase text-accent">
-            Vancouver, BC — Canada
-          </p>
-          <p className="mt-1 font-sans font-light text-xs tracking-[0.2em] uppercase text-accent">
-            michellewilson.art
+        {/* Right: category descriptions */}
+        <div className="flex flex-col gap-7">
+          <div>
+            <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
+              Original Works
+            </p>
+            <p className="font-serif font-light text-sm leading-relaxed text-foreground">
+              Paintings available for purchase. Please reach out directly to ask
+              about available works and pricing.
+            </p>
+          </div>
+
+          <div>
+            <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
+              Commissions
+            </p>
+            <p className="font-serif font-light text-sm leading-relaxed text-foreground">
+              I accept commissions across all subjects. Each piece is developed
+              in close, unhurried conversation with you, honouring what
+              you&rsquo;re drawn to and what you hope to carry home.
+            </p>
+          </div>
+
+          <div>
+            <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
+              Art Rental &amp; Staging
+            </p>
+            <p className="font-serif font-light text-sm leading-relaxed text-foreground">
+              Works are available for interior and architectural staging
+              projects. Inquire for current availability and terms.
+            </p>
+          </div>
+
+          <div>
+            <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
+              Studio Visits
+            </p>
+            <p className="font-serif font-light text-sm leading-relaxed text-foreground">
+              Available by appointment in Vancouver, BC.
+            </p>
+          </div>
+
+          <p className="font-serif italic font-light text-sm text-accent leading-relaxed">
+            Gallery, press, and curatorial inquiries are also welcome.
           </p>
         </div>
       </div>
 
-      {/* ── Right: form ──────────────────────────────── */}
-      <div>
+      {/* ── Bottom: form (full width) ─────────────────── */}
+      <div className="border-t border-muted pt-16">
         {status === "sent" ? (
           <div className="py-16 text-center">
             <p className="font-serif italic font-light text-2xl text-foreground">
@@ -145,7 +183,8 @@ export default function InquiriesForm() {
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-8">
+          <form onSubmit={handleSubmit} noValidate className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-16">
+
             {/* Name */}
             <div className="flex flex-col gap-1.5">
               <label className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent">
@@ -185,7 +224,7 @@ export default function InquiriesForm() {
             {/* Inquiry type */}
             <div className="flex flex-col gap-1.5">
               <label className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent">
-                Inquiry Type
+                Type of Inquiry
               </label>
               <select
                 name="type"
@@ -204,8 +243,8 @@ export default function InquiriesForm() {
               )}
             </div>
 
-            {/* Message */}
-            <div className="flex flex-col gap-1.5">
+            {/* Message — spans full width */}
+            <div className="flex flex-col gap-1.5 md:col-span-2">
               <label className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent">
                 Message
               </label>
@@ -223,18 +262,20 @@ export default function InquiriesForm() {
             </div>
 
             {status === "error" && (
-              <p className="font-sans text-xs text-red-400">
+              <p className="font-sans text-xs text-red-400 md:col-span-2">
                 Something went wrong. Please try again or email directly.
               </p>
             )}
 
-            <button
-              type="submit"
-              disabled={status === "sending"}
-              className="self-start mt-2 px-8 py-3 bg-foreground text-background font-sans font-light text-xs tracking-[0.2em] uppercase hover:bg-accent transition-colors duration-200 disabled:opacity-50"
-            >
-              {status === "sending" ? "Sending…" : "Send Message"}
-            </button>
+            <div className="md:col-span-2">
+              <button
+                type="submit"
+                disabled={status === "sending"}
+                className="px-8 py-3 bg-foreground text-background font-sans font-light text-xs tracking-[0.2em] uppercase hover:bg-accent transition-colors duration-200 disabled:opacity-50"
+              >
+                {status === "sending" ? "Sending…" : "Send Message"}
+              </button>
+            </div>
           </form>
         )}
       </div>

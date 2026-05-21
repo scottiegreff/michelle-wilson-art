@@ -23,15 +23,13 @@ export default function Footer() {
               Michelle R. Wilson
             </h2>
             <p className="font-sans font-light text-sm text-[#3D2A20] leading-relaxed max-w-xs">
-              Original paintings exploring landscape,
-              <br />
-              memory, and presence.
+              Original paintings by Michelle R. Wilson.
             </p>
             <p className="font-sans font-light text-xs tracking-[0.2em] uppercase text-[#4A3028] mt-2">
               Vancouver, BC — Canada
             </p>
-
           </div>
+
 
           {/* Navigate column */}
           <div>
@@ -89,11 +87,19 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-[#C49070]">
-        <div className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16 py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
+        {/* Land acknowledgement */}
+        <div className="border-t border-[#C49070] pt-8 mt-10">
+          <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-[#4A3028] mb-3">
+            Land Acknowledgement
+          </p>
+          <p className="font-sans font-light text-xs text-[#4A3028] leading-relaxed max-w-2xl">
+            With gratitude, this work is made on the unceded territories of the xʷməθkʷəy̓əm (Musqueam), Sḵwx̱wú7mesh (Squamish), and səlilwətaɬ (Tsleil-Waututh) Nations. I am grateful to live and create here.
+          </p>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="border-t border-[#C49070] mt-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="font-sans font-light text-xs text-[#4A3028] tracking-wide">
             &copy; {year} Michelle R. Wilson. All rights reserved.
           </p>

@@ -8,6 +8,7 @@ import parisPaintings from "@/data/paintings/paris.json";
 import dancersPaintings from "@/data/paintings/dancers.json";
 import homePortraitsPaintings from "@/data/paintings/home-portraits.json";
 import landscapesPaintings from "@/data/paintings/landscapes.json";
+import portraitsPaintings from "@/data/paintings/portraits.json";
 
 export const metadata: Metadata = {
   title: "Work — Michelle R. Wilson",
@@ -64,10 +65,10 @@ const series = [
   },
   {
     slug: "figure-portrait",
-    title: "Figure & Portrait",
+    title: "Portrait",
     date: null,
-    leadImage: null,
-    leadImageAlt: "",
+    leadImage: portraitsPaintings[0].src,
+    leadImageAlt: portraitsPaintings[0].title + ", Portrait series",
     description: "Studies of the human form and presence.",
     cta: "View series",
   },

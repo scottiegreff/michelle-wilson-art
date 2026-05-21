@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { FaDownload } from "react-icons/fa";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
@@ -72,72 +71,120 @@ export default function AboutPage() {
                   and contemplative figurative work.
                 </p>
                 <p className="font-serif font-light text-lg leading-relaxed text-foreground">
+                  She came to painting early, introduced by her grandmother
+                  during a childhood in Saskatchewan, and shaped by the quiet
+                  creative legacy of her grandfather, himself an artist. After
+                  years of study and formal training in Studio Art at Capilano
+                  University (2000), she has built a practice in Vancouver over
+                  more than three decades.
+                </p>
+                <p className="font-serif font-light text-lg leading-relaxed text-foreground">
                   Her approach to painting is rooted in slowness, listening, and
                   attention — a sensibility shaped by three decades of
                   professional work at the intersection of human experience and
                   care: twenty-five years in education and community living,
                   holding space for people whose needs required genuine
                   presence; and six years as a behavioural medicine health coach
-                  and somatic practitioner within primary healthcare, sitting
-                  with people through the slow, tender work of change.
+                  within primary healthcare, sitting with people through the
+                  slow, tender work of change.
                 </p>
                 <p className="font-serif font-light text-lg leading-relaxed text-foreground">
-                  Her influences include the contemplative traditions of
-                  meditation and inner stillness; painters such as Georgia
-                  O&rsquo;Keeffe and Frida Kahlo, whose authenticity and
-                  devotion to their own vision have remained quiet companions to
-                  her practice; and the experience of travel as a way of
-                  learning to see.
+                  Her current work — including the series <em>Returning</em> and
+                  her ongoing <em>Home Portraits</em> — moves between landscape
+                  and architecture, exploring how the spaces we inhabit hold
+                  memory, offer shelter, and quietly shape our sense of
+                  belonging to ourselves and the world.
                 </p>
                 <p className="font-serif font-light text-lg leading-relaxed text-foreground">
-                  Her current series, <em>Returning</em>, is an ongoing
-                  meditation on stillness and coming home to oneself. Her work
-                  is held in private collections across Canada and the United
-                  States. She accepts commissions across all subjects and is
-                  available for collaboration with interior, architectural, and
-                  curatorial projects.
+                  Her work is held in private collections across Canada and the
+                  United States. She accepts commissions across all subjects and
+                  is available for collaboration with interior, architectural,
+                  and curatorial projects.
                 </p>
               </div>
 
-              <div className="w-10 h-px bg-muted" />
 
-              {/* CV download */}
+            </div>
+          </div>
+
+          {/* ── A Turning ──────────────────────────────── */}
+          <div className="mt-24 pt-16 border-t border-muted">
+            <div className="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-16">
+
+              {/* Text */}
               <div>
-                <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-4">
-                  CV
-                </p>
-                <a
-                  href="/michelle-wilson-cv.pdf"
-                  download
-                  className="inline-flex items-center gap-3 group"
-                >
-                  <span className="font-sans font-light text-sm text-foreground group-hover:text-accent transition-colors">
-                    Download Artist CV
-                  </span>
-                  <FaDownload
-                    size={12}
-                    className="text-accent group-hover:text-foreground transition-colors"
-                  />
-                </a>
+                <h2 className="font-serif font-light text-4xl md:text-5xl leading-tight tracking-tight text-foreground mb-10">
+                  A Turning
+                </h2>
+                <div className="flex flex-col gap-5">
+                  <p className="font-serif font-light text-lg leading-relaxed text-foreground">
+                    I returned to painting the way many things that matter arrive —
+                    slowly, and then all at once.
+                  </p>
+                  <p className="font-serif font-light text-lg leading-relaxed text-foreground">
+                    For a long time, the work existed alongside the rest of my life:
+                    the years in classrooms and community spaces, the years sitting
+                    with people in the difficult space of change, learning to be
+                    present to what couldn&rsquo;t be fixed or rushed. That work
+                    taught me how much is contained in a single moment, if you are
+                    willing to stay in it.
+                  </p>
+                  <p className="font-serif font-light text-lg leading-relaxed text-foreground">
+                    Painting asks me to stay.
+                  </p>
+                  <p className="font-serif font-light text-lg leading-relaxed text-foreground">
+                    I paint slowly. I work until the image begins to tell me what it
+                    needs, and then I try to listen rather than lead. The work that
+                    arrives this way feels more true than anything I might have
+                    planned. It carries something of the quietness I&rsquo;ve spent
+                    years learning to trust.
+                  </p>
+                  <p className="font-serif font-light text-lg leading-relaxed text-foreground">
+                    My current series, <em>Returning</em>, is about that quietness.
+                    About the spaces that ask nothing of us except that we be there.
+                    I&rsquo;m interested in what it means to come home to oneself,
+                    and in how the painted surface can hold that feeling for someone
+                    who finds their way to it.
+                  </p>
+                  <p className="font-serif font-light text-lg leading-relaxed text-foreground">
+                    I live and work in Vancouver, BC. When I am not painting, I am
+                    often outside, or traveling, or looking at something beautiful
+                    until I understand it a little better.
+                  </p>
+                </div>
               </div>
 
-              <div className="w-10 h-px bg-muted" />
+              {/* CV + CTA — right of text */}
+              <div className="flex flex-col gap-10 justify-end">
+                <div>
+                  <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-4">
+                    CV
+                  </p>
+                  <a
+                    href="/michelle-wilson-cv.pdf"
+                    download
+                    className="font-sans font-light text-sm text-foreground hover:text-accent transition-colors"
+                  >
+                    Download Full Bio &amp; CV →
+                  </a>
+                </div>
 
-              {/* CTA */}
-              <div>
-                <p className="font-serif italic font-light text-base text-accent leading-relaxed mb-4">
-                  Interested in a piece or a commission?
-                </p>
-                <Link
-                  href="/inquiries"
-                  className="inline-block px-8 py-3 bg-foreground text-background font-sans font-light text-xs tracking-[0.2em] uppercase hover:bg-accent transition-colors duration-200"
-                >
-                  Get in Touch
-                </Link>
+                <div>
+                  <p className="font-serif italic font-light text-base text-accent leading-relaxed mb-4">
+                    Interested in a piece or a commission?
+                  </p>
+                  <Link
+                    href="/inquiries"
+                    className="inline-block px-8 py-3 bg-foreground text-background font-sans font-light text-xs tracking-[0.2em] uppercase hover:bg-accent transition-colors duration-200"
+                  >
+                    Get in Touch
+                  </Link>
+                </div>
               </div>
 
             </div>
           </div>
+
         </section>
       </main>
       <Footer />

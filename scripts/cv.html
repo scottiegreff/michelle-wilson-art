@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: normal;
+      color: #1A1A1A;
+      background: #fff;
+      font-size: 8.5pt;
+      line-height: 1.48;
+    }
+
+    /* ── Page wrapper ── */
+    .page {
+      padding: 36px 52px 0 52px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page-content {
+      flex: 1;
+    }
+
+    /* ── Header ── */
+    .header {
+      margin-bottom: 32px;
+    }
+
+    .name {
+      font-size: 28pt;
+      font-weight: normal;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .header-meta {
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .header-meta table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .header-meta table td {
+      font-size: 7.5pt;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #1A1A1A;
+      padding: 0;
+    }
+
+    .header-meta table td.header-location {
+      text-align: right;
+    }
+
+    /* ── Section ── */
+    .section {
+      margin-bottom: 28px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 24px;
+    }
+
+    .section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 7pt;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #1A1A1A;
+      margin-bottom: 12px;
+    }
+
+    /* ── Bio ── */
+    .bio p {
+      margin-bottom: 6px;
+      font-size: 11pt;
+      line-height: 1.52;
+    }
+
+    .bio p.updated {
+      font-style: italic;
+      color: #1A1A1A;
+      font-size: 10pt;
+      margin-top: 4px;
+      margin-bottom: 0;
+    }
+
+    /* ── CV table ── */
+    table.cv {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table.cv td {
+      padding: 2.5px 0;
+      vertical-align: top;
+      font-size: 10pt;
+    }
+
+    table.cv td.year {
+      width: 64px;
+      padding-right: 12px;
+      color: #1A1A1A;
+      white-space: nowrap;
+      font-size: 9.5pt;
+    }
+
+    .subsection-label {
+      font-size: 8pt;
+      color: #1A1A1A;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+      margin-top: 10px;
+    }
+
+    .cv-note {
+      font-style: italic;
+      font-size: 9pt;
+      color: #1A1A1A;
+      padding-left: 0;
+      margin-top: 1px;
+      margin-bottom: 4px;
+    }
+
+    /* ── Inline footer ── */
+    .page-footer {
+      border-top: 1px solid #eee;
+      padding: 8px 0 12px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 7pt;
+      color: #1A1A1A;
+      letter-spacing: 0.06em;
+      margin-top: 16px;
+    }
+
+    /* ── CV page heading ── */
+    .cv-page-title {
+      font-size: 13pt;
+      font-weight: normal;
+      letter-spacing: 0.1em;
+      color: #1A1A1A;
+      border-bottom: 1.5px solid #1A1A1A;
+      padding-bottom: 8px;
+      margin-bottom: 28px;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: BIOGRAPHY -->
+  <div class="page">
+    <div class="page-content">
+      <div class="header">
+        <div class="name">Michelle R. Wilson</div>
+        <div class="header-meta">
+          <table><tr>
+            <td>Painter</td>
+            <td class="header-location">Vancouver, BC</td>
+          </tr></table>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Biography</h2>
+        <div class="bio">
+          <p>Michelle R. Wilson is a Canadian painter based in Vancouver, BC. Her work moves across landscape, architectural studies, portraiture, and figurative painting, unified by a sustained inquiry into the relationship between self, spirit, and the world.</p>
+          <p>She came to painting early &#8212; introduced by her grandmother at age eight, during a childhood in Saskatchewan marked by serious illness. When asthma kept her indoors while other children played outside, painting became her portal: a way of inhabiting the world from within, of building an interior landscape when the exterior one remained out of reach. In this, she was not alone &#8212; her grandfather, on her father&#8217;s side, was himself an artist, and his presence and practice quietly shaped the creative inheritance she carries. That early relationship between the body, the imagination, and the act of making has never fully left her work.</p>
+          <p>After years of painting classes and a deepening love of the craft, she pursued formal training in Studio Art at Capilano University, North Vancouver, BC, graduating in 2000. She has been based in Vancouver for over thirty years.</p>
+          <p>Her approach to painting is rooted in slowness, listening, and attention &#8212; a sensibility shaped by three decades of professional work at the intersection of human experience and care: twenty-five years in education and community living, holding space for people whose needs required genuine presence; and six years as a behavioural medicine health coach within primary healthcare, sitting with people through the slow, tender work of change. She works intuitively, allowing each piece to develop through a process of attention rather than intention.</p>
+          <p>Her influences include the contemplative traditions of meditation and inner stillness; a deep calling toward beauty, truth, and the natural world; and the experience of travel as a way of learning to see &#8212; all held within an enduring inquiry into what it means to be fully present to this human life.</p>
+          <p>Her earlier bodies of work include figure and portrait studies, a series of Paris cityscapes, paintings of dancers in motion, and home portraits. Her current work &#8212; including the series <i>Returning</i> and her ongoing <i>Home Portraits</i> &#8212; moves between landscape and architecture, exploring how the spaces we inhabit hold memory, offer shelter, and quietly shape our sense of belonging. These works sit with a quietly philosophical question: what does it mean to feel held by a place &#8212; by the earth beneath it, and the walls we raise from it?</p>
+          <p>Her paintings are held in private collections across Canada and the United States. She accepts commissions across all subjects and is available for collaboration with interior, architectural, and curatorial projects.</p>
+          <p class="updated">Updated May 2026</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>michellewilson.art</span>
+      <span>studio@michellewilson.art</span>
+      <span>Updated May 2026</span>
+    </div>
+  </div>
+
+  <div style="page-break-before:always;"></div>
+  <!-- PAGE 2: CV -->
+  <div class="page">
+    <div class="page-content">
+      <div class="header">
+        <div class="name">Michelle R. Wilson</div>
+        <div class="header-meta">
+          <table><tr>
+            <td>Painter</td>
+            <td class="header-location">Vancouver, BC</td>
+          </tr></table>
+        </div>
+      </div>
+
+      <div class="cv-page-title">C V</div>
+
+      <!-- Education -->
+      <div class="section">
+        <h2>Education</h2>
+        <table class="cv">
+          <tr>
+            <td class="year">2000</td>
+            <td>Studio Art, Capilano University, North Vancouver, BC</td>
+          </tr>
+        </table>
+        <div class="cv-note">Self-taught foundation beginning age 8; formal training at Capilano University</div>
+      </div>
+
+      <!-- Exhibitions -->
+      <div class="section">
+        <h2>Exhibitions</h2>
+        <div class="subsection-label">Solo</div>
+        <table class="cv">
+          <tr><td class="year">2015</td><td>Paris, Art and Fashion Collaboration, L&#252;t Boutique, Vancouver, BC</td></tr>
+          <tr><td class="year">2011</td><td>Form, The Whip Gallery Restaurant, Vancouver, BC</td></tr>
+          <tr><td class="year">2005</td><td>Portrait Studies, Art Gallery of Regina, Regina, SK</td></tr>
+          <tr><td class="year">2003</td><td>Solo Exhibition, Bushwacker Restaurant Gallery, Regina, SK</td></tr>
+        </table>
+        <div class="subsection-label">Group</div>
+        <table class="cv">
+          <tr><td class="year">2005</td><td>Art Gallery of Regina, Regina, SK</td></tr>
+          <tr><td class="year">2004&#8211;2005</td><td>La Bodega Restaurant Gallery, Regina, SK</td></tr>
+          <tr><td class="year">2002</td><td>Waterfall Gallery, Vancouver, BC</td></tr>
+          <tr><td class="year">2002</td><td>Studio Blue, Vancouver, BC</td></tr>
+        </table>
+      </div>
+
+      <!-- Selected Commissions -->
+      <div class="section">
+        <h2>Selected Commissions</h2>
+        <table class="cv">
+          <tr><td class="year">2026</td><td>Florence Landscape, private commission, White City, SK</td></tr>
+          <tr><td class="year">2026</td><td>Home Portrait, private commission, Fort Lauderdale, FL</td></tr>
+          <tr><td class="year">2020</td><td>Coastal Pastoral, private commission, Toronto, ON</td></tr>
+          <tr><td class="year">2016</td><td>Pacific Shore Landscape, private commission, Sunshine Coast, BC</td></tr>
+          <tr><td class="year">2008</td><td>Parental Portraits, private commission, Regina, SK</td></tr>
+          <tr><td class="year">2007</td><td>Child Portraits, private commission, Moose Jaw, SK</td></tr>
+          <tr><td class="year">2006</td><td>Johnny Cash (portrait), private commission, Edmonton, AB</td></tr>
+          <tr><td class="year">2004</td><td>Audrey Hepburn and Johnny Depp (portraits), private commission, Regina, SK</td></tr>
+        </table>
+      </div>
+
+      <!-- Collections -->
+      <div class="section">
+        <h2>Collections</h2>
+        <p style="font-size:10pt;">Private collections across Canada and the United States.</p>
+      </div>
+
+      <!-- Press -->
+      <div class="section">
+        <h2>Press</h2>
+        <table class="cv">
+          <tr><td class="year">2015</td><td>&#8220;Fashion &amp; Art Converge at L&#252;t,&#8221; <i>Vancouver Is Awesome</i></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>michellewilson.art</span>
+      <span>studio@michellewilson.art</span>
+      <span>Updated May 2026</span>
+    </div>
+  </div>
+
+</body>
+</html>

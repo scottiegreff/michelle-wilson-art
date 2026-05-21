@@ -40,5 +40,33 @@
     "description": "",
     "framed": false,
     "prints": false
+  },
+  {
+    "src": "/work/dancers/study-2.webp",
+    "title": "Study 2",
+    "year": "2005",
+    "medium": "Acrylic on Canvas",
+    "width": 36,
+    "height": 36,
+    "orientation": "square",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
+  },
+  {
+    "src": "/work/dancers/study-1.webp",
+    "title": "Study 1",
+    "year": "2005",
+    "medium": "Acrylic on Canvas",
+    "width": 32,
+    "height": 40,
+    "orientation": "portrait",
+    "price": null,
+    "status": "available",
+    "description": "",
+    "framed": false,
+    "prints": false
   }
 ]
