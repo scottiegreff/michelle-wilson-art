@@ -152,19 +152,19 @@ export default function SeriesGallery({
 
           {/* Image + caption */}
           <div
-            className="flex flex-col items-center px-16 md:px-24"
+            className="flex flex-col items-center w-full px-0 md:px-24"
             onClick={(e) => e.stopPropagation()}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <div className={`relative w-full max-w-4xl h-[70vh] ${aspectClass[current.orientation || 'square']} bg-muted`}>
+            <div className="flex items-center justify-center w-full md:max-w-4xl bg-white">
               <img
                 src={current.src}
                 alt={current.title}
-                className="w-full h-full object-cover select-none"
+                className="block select-none w-full h-auto max-h-[85vh] md:w-auto md:max-w-full md:max-h-[70vh]"
                 draggable={false}
               />
             </div>
-            <div className="mt-5 text-center">
+            <div className="mt-5 text-center px-6 md:px-0">
               <p className="font-serif font-light text-lg text-foreground">
                 {current.title}
               </p>
