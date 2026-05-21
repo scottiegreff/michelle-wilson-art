@@ -32,16 +32,13 @@ export default function FigurePortraitPage() {
               Portrait
             </h1>
             <div className="w-10 h-px bg-muted mb-8" />
-            <p className="font-serif font-light text-base leading-relaxed text-foreground mb-4">
-              The figure is where I began. These paintings are studies in
-              presence — in what it means to look closely at another person, to
-              hold attention long enough that something true comes forward. Some
-              are formal portraits; others are quieter, more interior.
-            </p>
             <p className="font-serif font-light text-base leading-relaxed text-foreground">
-              Together they trace an ongoing interest in how the body carries
-              feeling, and how paint can hold both likeness and inner life at
-              once.
+              These paintings are studies in presence — in what it means to look
+              closely at another person, to hold attention long enough that
+              something true comes forward. Some are formal portraits; others are
+              quieter, more interior. Together they trace an ongoing interest in
+              how the body carries feeling, and how paint can hold both likeness
+              and inner life at once.
             </p>
           </div>
 
