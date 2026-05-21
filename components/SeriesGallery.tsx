@@ -156,12 +156,14 @@ export default function SeriesGallery({
             onClick={(e) => e.stopPropagation()}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={current.src}
-              alt={current.title}
-              className="max-h-[75vh] max-w-[80vw] object-contain select-none"
-              draggable={false}
-            />
+            <div className={`relative w-full max-w-md h-96 ${aspectClass[current.orientation]} bg-muted`}>
+              <img
+                src={current.src}
+                alt={current.title}
+                className="w-full h-full object-cover select-none"
+                draggable={false}
+              />
+            </div>
             <div className="mt-5 text-center">
               <p className="font-serif font-light text-lg text-foreground">
                 {current.title}
