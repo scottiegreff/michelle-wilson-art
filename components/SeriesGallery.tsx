@@ -156,7 +156,7 @@ export default function SeriesGallery({
             onClick={(e) => e.stopPropagation()}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <div className={`relative w-full max-w-md h-96 ${aspectClass[current.orientation || 'square']} bg-muted`}>
+            <div className={`relative w-full max-w-4xl h-[70vh] ${aspectClass[current.orientation || 'square']} bg-muted`}>
               <img
                 src={current.src}
                 alt={current.title}
