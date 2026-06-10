@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaInstagram } from "react-icons/fa";
+
+const INSTAGRAM_URL = "https://www.instagram.com/michelle.r.wilson";
 
 const navLinks = [
   { label: "Work", href: "/work" },
@@ -74,6 +76,21 @@ export default function Footer() {
                 />
                 <span className="font-sans font-light text-sm text-[#3D2A20] group-hover:text-[#1A1A1A] transition-colors duration-200 break-all">
                   studio@michellewilson.art
+                </span>
+              </a>
+
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2.5 group"
+              >
+                <FaInstagram
+                  size={14}
+                  className="text-[#4A3028] group-hover:text-[#1A1A1A] transition-colors duration-200 shrink-0"
+                />
+                <span className="font-sans font-light text-sm text-[#3D2A20] group-hover:text-[#1A1A1A] transition-colors duration-200 break-all">
+                  @michelle.r.wilson
                 </span>
               </a>
 

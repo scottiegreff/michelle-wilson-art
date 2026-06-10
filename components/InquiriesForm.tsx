@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaInstagram } from "react-icons/fa";
+
+const INSTAGRAM_URL = "https://www.instagram.com/michelle.r.wilson";
 
 const inquiryTypes = [
   { value: "", label: "Select a type" },
@@ -102,6 +104,20 @@ export default function InquiriesForm() {
               />
               <span className="font-sans font-light text-sm text-accent group-hover:text-foreground transition-colors">
                 studio@michellewilson.art
+              </span>
+            </a>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 group w-fit"
+            >
+              <FaInstagram
+                size={15}
+                className="text-accent group-hover:text-foreground transition-colors shrink-0"
+              />
+              <span className="font-sans font-light text-sm text-accent group-hover:text-foreground transition-colors">
+                @michelle.r.wilson
               </span>
             </a>
             <a
