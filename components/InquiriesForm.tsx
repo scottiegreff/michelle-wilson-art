@@ -120,13 +120,6 @@ export default function InquiriesForm() {
                 @michelle.r.wilson
               </span>
             </a>
-            <a
-              href="/michelle-wilson-cv.pdf"
-              download
-              className="font-sans font-light text-sm text-accent hover:text-foreground transition-colors"
-            >
-              Download Full Bio &amp; CV →
-            </a>
           </div>
 
           <div>
