@@ -74,9 +74,9 @@ export default function AboutPage() {
                   She came to painting early, introduced by her grandmother
                   during a childhood in Saskatchewan, and shaped by the quiet
                   creative legacy of her grandfather, himself an artist. After
-                  years of study and formal training in Studio Art at Capilano
-                  University (2000), she has built a practice in Vancouver over
-                  more than three decades.
+                  years of study and formal training at Capilano University,
+                  she has built a practice in Vancouver over more than three
+                  decades.
                 </p>
                 <p className="font-serif font-light text-lg leading-relaxed text-foreground">
                   Her approach to painting is rooted in slowness, listening, and
