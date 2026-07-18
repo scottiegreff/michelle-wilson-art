@@ -154,21 +154,8 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* CV + CTA — right of text */}
+              {/* CTA — right of text */}
               <div className="flex flex-col gap-10 justify-end">
-                <div>
-                  <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-4">
-                    CV
-                  </p>
-                  <a
-                    href="/michelle-wilson-cv.pdf"
-                    download
-                    className="font-sans font-light text-sm text-foreground hover:text-accent transition-colors"
-                  >
-                    Download Full Bio &amp; CV →
-                  </a>
-                </div>
-
                 <div>
                   <p className="font-serif italic font-light text-base text-accent leading-relaxed mb-4">
                     Interested in a piece or a commission?
