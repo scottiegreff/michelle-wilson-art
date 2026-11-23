@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "About — Michelle R. Wilson",
   description:
-    "Michelle R. Wilson is a visual artist based in Vancouver, BC, working in oil on canvas. Her paintings explore landscape, memory, and the places that hold us.",
+    "Michelle R. Wilson is a visual artist based in Vancouver, BC, working in acrylic on canvas. Her paintings explore landscape, memory, and the places that hold us.",
 };
 
 const PHOTO_PATH = "/about/Non-Headshot.jpeg";
