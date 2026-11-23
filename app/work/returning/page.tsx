@@ -35,33 +35,50 @@ export default function ReturningPage() {
               2026 – ongoing
             </p>
             <div className="w-10 h-px bg-muted mb-8" />
-            <p className="font-serif italic font-light text-xl leading-relaxed text-foreground mb-5">
-              There is a quality of attention that asks nothing of the world —
-              only that it be allowed to rest in it.
-            </p>
-            <p className="font-serif font-light text-base leading-relaxed text-foreground mb-4">
-              Returning began as a question: what does it feel like to arrive
-              somewhere — not in a body rushing toward the next moment, but in a
-              body that has finally stopped? The paintings in this series are
-              about the stillness that remains when urgency lifts.
-            </p>
-            <p className="font-serif italic font-light text-sm text-accent">
-              Returning is in progress and ongoing.
-            </p>
+            <div className="flex flex-col gap-4">
+              <p className="font-serif font-light text-base leading-relaxed text-foreground">
+                <em>Returning</em> began with <em>Held</em>.
+              </p>
+              <p className="font-serif font-light text-base leading-relaxed text-foreground">
+                I was drawn to the relationship between the interior and the
+                world beyond it, and the feelings of expansion it evoked in me.
+              </p>
+              <p className="font-serif font-light text-base leading-relaxed text-foreground">
+                As the series develops, I find myself exploring what draws us to
+                particular places and how our surroundings influence the ways we
+                experience ourselves and the world.
+              </p>
+              <p className="font-serif font-light text-base leading-relaxed text-foreground">
+                There is a growing interest in the relationships between the
+                built and natural environments, in the passage of time, and in
+                the quiet processes of change and renewal.
+              </p>
+              <p className="font-serif font-light text-base leading-relaxed text-foreground">
+                Through these paintings, I&rsquo;m curious about what becomes
+                possible when we pay closer attention — to a place, to our own
+                experience, and to the many relationships of which we are a part.
+              </p>
+              <p className="font-serif font-light text-base leading-relaxed text-foreground">
+                <em>Returning</em> is an ongoing exploration.
+              </p>
+            </div>
           </div>
 
           <SeriesGallery paintings={paintings} thumbnailAspect="square" />
 
-          {/* Commission CTA */}
-          <div className="mt-16 pt-10 border-t border-muted flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <p className="font-serif italic font-light text-base text-foreground">
-              Interested in a piece from this series?
-            </p>
+          {/* Related links */}
+          <div className="mt-16 pt-10 border-t border-muted flex flex-col gap-6">
+            <Link
+              href="/studio-notes/on-beginning-returning"
+              className="w-fit font-serif font-light text-lg text-foreground hover:text-accent transition-colors"
+            >
+              Read: On Beginning <em>Returning</em> →
+            </Link>
             <Link
               href="/inquiries"
-              className="inline-block px-8 py-3 bg-foreground text-background font-sans font-light text-xs tracking-[0.2em] uppercase hover:bg-accent transition-colors duration-200"
+              className="w-fit inline-block px-8 py-3 bg-foreground text-background font-sans font-light text-xs tracking-[0.2em] uppercase hover:bg-accent transition-colors duration-200"
             >
-              Inquire
+              Inquire About a Painting
             </Link>
           </div>
 

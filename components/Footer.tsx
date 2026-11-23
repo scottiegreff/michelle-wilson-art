@@ -25,19 +25,18 @@ export default function Footer() {
               Michelle R. Wilson
             </h2>
             <p className="font-sans font-light text-sm text-[#3D2A20] leading-relaxed max-w-xs">
-              Original paintings by Michelle R. Wilson.
-            </p>
-            <p className="font-sans font-light text-xs tracking-[0.2em] uppercase text-[#4A3028] mt-2">
-              Vancouver, BC — Canada
+              Visual Artist
+              <br />
+              Vancouver, British Columbia, Canada
             </p>
           </div>
 
 
           {/* Navigate column */}
           <div>
-            <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-[#4A3028] mb-5">
-              Navigate
-            </p>
+            <h2 className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-[#4A3028] mb-5">
+              Navigation
+            </h2>
             <ul className="flex flex-col gap-3">
               <li>
                 <Link
@@ -62,9 +61,9 @@ export default function Footer() {
 
           {/* Contact column */}
           <div>
-            <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-[#4A3028] mb-5">
+            <h2 className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-[#4A3028] mb-5">
               Contact
-            </p>
+            </h2>
             <div className="flex flex-col gap-4">
               <a
                 href="mailto:studio@michellewilson.art"
@@ -90,29 +89,27 @@ export default function Footer() {
                   className="text-[#4A3028] group-hover:text-[#1A1A1A] transition-colors duration-200 shrink-0"
                 />
                 <span className="font-sans font-light text-sm text-[#3D2A20] group-hover:text-[#1A1A1A] transition-colors duration-200 break-all">
-                  @michelle.r.wilson
+                  Instagram: @michelle.r.wilson
                 </span>
               </a>
 
-              <div className="mt-4 pt-4 border-t border-[#C49070]">
-                <p className="font-serif italic font-light text-sm text-[#4A3028] leading-relaxed">
-                  &ldquo;Some places hold you.
-                  <br />
-                  Some paintings do too.&rdquo;
-                </p>
-              </div>
             </div>
           </div>
         </div>
 
         {/* Land acknowledgement */}
         <div className="border-t border-[#C49070] pt-8 mt-10">
-          <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-[#4A3028] mb-3">
+          <h2 className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-[#4A3028] mb-3">
             Land Acknowledgement
-          </p>
-          <p className="font-sans font-light text-xs text-[#4A3028] leading-relaxed max-w-2xl">
-            With gratitude, this work is made on the unceded territories of the xʷməθkʷəy̓əm (Musqueam), Sḵwx̱wú7mesh (Squamish), and səlilwətaɬ (Tsleil-Waututh) Nations. I am grateful to live and create here.
-          </p>
+          </h2>
+          <div className="flex flex-col gap-3 max-w-2xl">
+            <p className="font-sans font-light text-xs text-[#4A3028] leading-relaxed">
+              With gratitude and respect, I acknowledge that I live and create on the traditional, ancestral, and unceded territories of the xʷməθkʷəy̓əm (Musqueam), Sḵwx̱wú7mesh Úxwumixw (Squamish Nation), and səlilwətaɬ (Tsleil-Waututh) Nations.
+            </p>
+            <p className="font-sans font-light text-xs text-[#4A3028] leading-relaxed">
+              I honour their enduring presence, their relationships with these lands and waters, and their ongoing stewardship. I recognise my responsibility to continue listening, learning, and deepening my understanding of what it means to live here with respect, reciprocity, and care.
+            </p>
+          </div>
         </div>
 
         {/* Bottom bar */}

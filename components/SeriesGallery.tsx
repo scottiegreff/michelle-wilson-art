@@ -24,6 +24,12 @@ type Props = {
   thumbnailAspect?: "square" | "portrait" | "landscape";
 };
 
+function altText(p: Painting) {
+  return [p.title, p.medium?.toLowerCase(), "painting by Michelle R. Wilson"]
+    .filter(Boolean)
+    .join(", ");
+}
+
 const aspectClass = {
   square: "aspect-square",
   portrait: "aspect-3/4",
@@ -98,7 +104,7 @@ export default function SeriesGallery({
             >
               <Image
                 src={p.src}
-                alt={p.title}
+                alt={altText(p)}
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
@@ -159,7 +165,7 @@ export default function SeriesGallery({
             <div className="flex items-center justify-center w-full md:max-w-4xl bg-white">
               <img
                 src={current.src}
-                alt={current.title}
+                alt={altText(current)}
                 className="block select-none w-full h-auto max-h-[85vh] md:w-auto md:max-w-full md:max-h-[70vh]"
                 draggable={false}
               />

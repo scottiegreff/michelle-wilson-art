@@ -33,13 +33,7 @@ export default function ParisPage() {
             </h1>
             <div className="w-10 h-px bg-muted mb-8" />
             <p className="font-serif font-light text-base leading-relaxed text-foreground">
-              My first time in Paris, like so many painters before me, I fell in
-              love with its streets, its rooftops, its light. These cityscapes
-              are records of looking and dreaming; of walking the same blocks
-              until they became familiar, of learning a city through the steady
-              practice of paying attention. The work is less about Paris as a
-              subject than about what sustained looking does to the eye, and
-              what a place becomes when you let it teach you.
+              These paintings grew from time spent wandering the streets of Paris, drawn to its architecture, colours, caf&eacute;s and changing light.
             </p>
           </div>
 

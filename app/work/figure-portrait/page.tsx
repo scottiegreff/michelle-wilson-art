@@ -33,19 +33,14 @@ export default function FigurePortraitPage() {
             </h1>
             <div className="w-10 h-px bg-muted mb-8" />
             <p className="font-serif font-light text-base leading-relaxed text-foreground">
-              These paintings are studies in presence — in what it means to look
-              closely at another person, to hold attention long enough that
-              something true comes forward. Some are formal portraits; others are
-              quieter, more interior. Together they trace an ongoing interest in
-              how the body carries feeling, and how paint can hold both likeness
-              and inner life at once.
+              Portraiture offers an opportunity to look closely at the expression and the individuality of a person.
             </p>
           </div>
 
           <SeriesGallery paintings={paintings} thumbnailAspect="square" />
 
           {/* CTA */}
-          <div className="pt-10 border-t border-muted flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div className="mt-16 pt-10 border-t border-muted flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <p className="font-serif italic font-light text-base text-foreground">
               Interested in a portrait commission?
             </p>

@@ -33,11 +33,7 @@ export default function DancersPage() {
             </h1>
             <div className="w-10 h-px bg-muted mb-8" />
             <p className="font-serif font-light text-base leading-relaxed text-foreground">
-              Painting dancers taught me about movement, but also about stillness
-              inside movement — the suspended moment when a body knows exactly
-              where it is. These pieces are studies in breath, line, and the
-              architecture of the moving figure. Some were made from life in the
-              studio; others from photographs, after the movement had passed.
+              This body of work explores movement, gesture and the expressive qualities of the human figure.
             </p>
           </div>
 

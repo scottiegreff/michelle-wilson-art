@@ -32,17 +32,8 @@ export default function LandscapesPage() {
               Landscapes
             </h1>
             <div className="w-10 h-px bg-muted mb-8" />
-            <p className="font-serif font-light text-base leading-relaxed text-foreground mb-4">
-              These paintings are conversations with place. I work mostly from
-              direct experience — time spent in a particular landscape until
-              something of it settles into me, and then into the paint. The work
-              is interested in what land holds: weather, time, quiet, the felt
-              sense.
-            </p>
             <p className="font-serif font-light text-base leading-relaxed text-foreground">
-              Both this series and Home Portraits sit close to{" "}
-              <em>Returning</em> — each, in its own way, is about being held by
-              a place.
+              I&rsquo;m drawn to the changing qualities of light, colour and atmosphere, and the particular character of a place.
             </p>
           </div>
 

@@ -7,10 +7,12 @@ const INSTAGRAM_URL = "https://www.instagram.com/michelle.r.wilson";
 
 const inquiryTypes = [
   { value: "", label: "Select a type" },
-  { value: "original-work", label: "Original Work" },
+  { value: "original-artwork", label: "Original artwork" },
   { value: "commission", label: "Commission" },
-  { value: "art-rental-staging", label: "Art Rental & Staging" },
-  { value: "studio-visit", label: "Studio Visit" },
+  { value: "art-rental-staging", label: "Art rental or staging" },
+  { value: "studio-visit", label: "Studio visit" },
+  { value: "gallery-press-curatorial", label: "Gallery, press or curatorial inquiry" },
+  { value: "collaboration", label: "Collaboration" },
   { value: "other", label: "Other" },
 ];
 
@@ -84,16 +86,23 @@ export default function InquiriesForm() {
             <h1 className="font-serif font-light text-4xl sm:text-5xl leading-tight tracking-tight text-foreground">
               Inquiries
             </h1>
-            <p className="mt-5 font-serif italic font-light text-lg text-accent leading-relaxed">
-              Whether you&rsquo;re drawn to a specific piece, curious about a
-              commission, or simply moved by something here — I&rsquo;d love to
-              hear from you.
-            </p>
+            <div className="mt-5 flex flex-col gap-4">
+              <p className="font-serif font-light text-lg text-foreground leading-relaxed">
+                Thank you for your interest in my work.
+              </p>
+              <p className="font-serif font-light text-lg text-foreground leading-relaxed">
+                I welcome inquiries about original paintings, commissions,
+                studio visits and opportunities for collaboration.
+              </p>
+            </div>
           </div>
 
           <div className="w-10 h-px bg-muted" />
 
           <div className="flex flex-col gap-4">
+            <p className="font-serif font-light text-base text-foreground">
+              You can contact me directly at:
+            </p>
             <a
               href="mailto:studio@michellewilson.art"
               className="flex items-center gap-3 group w-fit"
@@ -120,6 +129,9 @@ export default function InquiriesForm() {
                 @michelle.r.wilson
               </span>
             </a>
+            <p className="font-serif font-light text-base text-foreground">
+              Or use the form below.
+            </p>
           </div>
 
           <div>
@@ -135,60 +147,55 @@ export default function InquiriesForm() {
         {/* Right: category descriptions */}
         <div className="flex flex-col gap-7">
           <div>
-            <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
-              Original Works
-            </p>
+            <h2 className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
+              Original Paintings
+            </h2>
             <p className="font-serif font-light text-sm leading-relaxed text-foreground">
-              Paintings available for purchase. Please reach out directly to ask
-              about available works and pricing.
+              For information about available works, pricing and purchasing, please get in touch.
             </p>
           </div>
-
           <div>
-            <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
+            <h2 className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
               Commissions
-            </p>
+            </h2>
             <p className="font-serif font-light text-sm leading-relaxed text-foreground">
-              I accept commissions across all subjects. Each piece is developed
-              in close, unhurried conversation with you, honouring what
-              you&rsquo;re drawn to and what you hope to carry home.
+              Each commission begins with a thoughtful conversation about what you&rsquo;re drawn to and what you have in mind.
             </p>
           </div>
-
           <div>
-            <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
+            <h2 className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
               Art Rental &amp; Staging
-            </p>
+            </h2>
             <p className="font-serif font-light text-sm leading-relaxed text-foreground">
-              Works are available for interior and architectural staging
-              projects. Inquire for current availability and terms.
+              Please contact me to discuss the availability of artwork for rental, interior design or staging projects.
             </p>
           </div>
-
           <div>
-            <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
+            <h2 className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
               Studio Visits
-            </p>
+            </h2>
             <p className="font-serif font-light text-sm leading-relaxed text-foreground">
               Available by appointment in Vancouver, BC.
             </p>
           </div>
-
-          <p className="font-serif italic font-light text-sm text-accent leading-relaxed">
-            Gallery, press, and curatorial inquiries are also welcome.
-          </p>
+          <div>
+            <h2 className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-2">
+              Collaborations
+            </h2>
+            <p className="font-serif font-light text-sm leading-relaxed text-foreground">
+              I welcome inquiries from galleries, curators, designers, architects and others interested in creative collaboration.
+            </p>
+          </div>
         </div>
       </div>
 
       {/* ── Bottom: form (full width) ─────────────────── */}
       <div className="border-t border-muted pt-16">
         {status === "sent" ? (
-          <div className="py-16 text-center">
-            <p className="font-serif italic font-light text-2xl text-foreground">
-              Thank you.
-            </p>
-            <p className="mt-4 font-sans font-light text-sm text-accent">
-              Your message has been received. I&rsquo;ll be in touch soon.
+          <div className="py-16 text-center" role="status">
+            <p className="font-serif italic font-light text-xl md:text-2xl text-foreground leading-relaxed max-w-xl mx-auto">
+              Thank you for reaching out. Your message has been sent, and I look
+              forward to connecting with you.
             </p>
           </div>
         ) : (
@@ -196,11 +203,12 @@ export default function InquiriesForm() {
 
             {/* Name */}
             <div className="flex flex-col gap-1.5">
-              <label className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent">
+              <label htmlFor="inquiry-name" className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent">
                 Name
               </label>
               <input
                 type="text"
+                id="inquiry-name"
                 name="name"
                 value={form.name}
                 onChange={handleChange}
@@ -214,11 +222,12 @@ export default function InquiriesForm() {
 
             {/* Email */}
             <div className="flex flex-col gap-1.5">
-              <label className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent">
+              <label htmlFor="inquiry-email" className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent">
                 Email
               </label>
               <input
                 type="email"
+                id="inquiry-email"
                 name="email"
                 value={form.email}
                 onChange={handleChange}
@@ -232,10 +241,11 @@ export default function InquiriesForm() {
 
             {/* Inquiry type */}
             <div className="flex flex-col gap-1.5">
-              <label className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent">
+              <label htmlFor="inquiry-type" className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent">
                 Type of Inquiry
               </label>
               <select
+                id="inquiry-type"
                 name="type"
                 value={form.type}
                 onChange={handleChange}
@@ -254,10 +264,11 @@ export default function InquiriesForm() {
 
             {/* Message — spans full width */}
             <div className="flex flex-col gap-1.5 md:col-span-2">
-              <label className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent">
+              <label htmlFor="inquiry-message" className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent">
                 Message
               </label>
               <textarea
+                id="inquiry-message"
                 name="message"
                 value={form.message}
                 onChange={handleChange}

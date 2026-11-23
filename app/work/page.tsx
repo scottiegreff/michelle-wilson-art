@@ -20,12 +20,12 @@ const series = [
   {
     slug: "returning",
     title: "Returning",
-    date: "2026 –",
+    date: "2026 – ongoing",
     leadImage: returningPaintings[0].src,
     leadImageAlt: returningPaintings[0].title + ", from the Returning series",
     description:
-      "A series in progress. Paintings of stillness, space, and the quiet that waits in architecture, landscape, and light.",
-    cta: "Enter series",
+      "An exploration of place and presence.",
+    cta: "View Returning",
   },
   {
     slug: "home-portraits",
@@ -33,8 +33,8 @@ const series = [
     date: null,
     leadImage: homePortraitsPaintings[0].src,
     leadImageAlt: homePortraitsPaintings[0].title + ", Home Portraits series",
-    description: "Paintings of the homes that hold a life.",
-    cta: "View series",
+    description: "Architecture and its relationship with the surrounding environment.",
+    cta: "View Home Portraits",
   },
   {
     slug: "landscapes",
@@ -42,8 +42,8 @@ const series = [
     date: null,
     leadImage: landscapesPaintings[0].src,
     leadImageAlt: landscapesPaintings[0].title + ", Landscapes series",
-    description: "Paintings of place — the land as both subject and presence.",
-    cta: "View series",
+    description: "Observations of time and place.",
+    cta: "View Landscapes",
   },
   {
     slug: "paris",
@@ -51,8 +51,8 @@ const series = [
     date: null,
     leadImage: parisPaintings[0].src,
     leadImageAlt: parisPaintings[0].title + ", Paris series",
-    description: "Cityscapes from time spent walking the streets of Paris.",
-    cta: "View series",
+    description: "Cityscapes inspired by time spent wandering the streets of Paris.",
+    cta: "View Paris",
   },
   {
     slug: "dancers",
@@ -60,8 +60,8 @@ const series = [
     date: null,
     leadImage: dancersPaintings[0].src,
     leadImageAlt: dancersPaintings[0].title + ", Dancers series",
-    description: "Movement, breath, and the body in motion.",
-    cta: "View series",
+    description: "Movement, gesture and the expressive qualities of the human figure.",
+    cta: "View Dancers",
   },
   {
     slug: "figure-portrait",
@@ -69,8 +69,8 @@ const series = [
     date: null,
     leadImage: portraitsPaintings[0].src,
     leadImageAlt: portraitsPaintings[0].title + ", Portrait series",
-    description: "Studies of the human form and presence.",
-    cta: "View series",
+    description: "Studies of expression and individuality.",
+    cta: "View Portrait",
   },
 ];
 
@@ -85,17 +85,13 @@ export default function WorkPage() {
 
           {/* Page intro */}
           <div className="max-w-2xl mb-16">
-            <p className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-4">
+            <h1 className="font-sans font-light text-[10px] tracking-[0.25em] uppercase text-accent mb-4">
               Work
-            </p>
+            </h1>
             <p className="font-serif font-light text-lg leading-relaxed text-foreground">
-              My practice moves across several bodies of work, each shaped by a
-              different way of looking — at the land, the city, the home, the
-              body, the self.
-            </p>
-            <p className="font-serif font-light text-lg leading-relaxed text-foreground mt-3">
-              The newest work, <em>Returning</em>, is where my attention lives
-              now. The earlier series remain part of how I see.
+              My painting practice spans more than three decades, exploring
+              questions of place, observation, memory and how we experience the
+              world around us.
             </p>
           </div>
 
@@ -188,12 +184,13 @@ export default function WorkPage() {
           {/* Commission CTA */}
           <div className="mt-20 pt-10 border-t border-muted">
             <p className="font-serif italic font-light text-base text-foreground">
-              For commissions, art rental, or curatorial inquiries, please{" "}
+              For information about available paintings or commissions, please
+              visit{" "}
               <Link
                 href="/inquiries"
                 className="underline underline-offset-4 decoration-muted hover:decoration-foreground transition-colors"
               >
-                get in touch
+                Inquiries
               </Link>
               .
             </p>

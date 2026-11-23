@@ -23,7 +23,8 @@ export const metadata: Metadata = {
     "Original paintings by Michelle R. Wilson, a visual artist based in Vancouver, BC. Exploring landscape, memory, and presence.",
   openGraph: {
     title: "Michelle R. Wilson — Visual Artist",
-    description: "Some places hold you. Some paintings do too.",
+    description:
+      "Original paintings by Michelle R. Wilson, a visual artist based in Vancouver, BC.",
     url: "https://michellewilson.art",
     siteName: "Michelle R. Wilson",
     locale: "en_CA",
